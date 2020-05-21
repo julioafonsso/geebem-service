@@ -1,0 +1,34 @@
+{
+  "name": "geebem-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -v -l **/*.test.js",
+    "start": "nodemon "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "@hapi/vision": "^6.0.0",
+    "bcrypt": "^4.0.1",
+    "boom": "^7.3.0",
+    "dotenv": "^8.2.0",
+    "hapi-auth-jwt2": "^10.1.0",
+    "hapi-cors": "^1.0.3",
+    "hapi-swagger": "^13.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "package": "^1.0.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.1",
+    "@hapi/lab": "^22.0.4",
+    "mongodb-memory-server": "^6.5.2"
+  }
+}
