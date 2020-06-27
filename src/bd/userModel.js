@@ -42,10 +42,8 @@ class UserModel extends mongoDb {
 	async login(username, password) {
 		try {
 			const [user] = await this.read({ username: username.toLowerCase() });
-			let passwordHash = await hashAsync(password, SALT);
 			if (user === undefined || !compareAsync(password, user.password))
 				throw Error("O usuario e senha invalidos!");
-
 			return {
 				token: Jwt.sign(
 					{

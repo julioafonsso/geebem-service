@@ -20,7 +20,6 @@ module.exports.signup = (request) => {
 
 module.exports.login = (request) => {
 	const { username, password } = request.payload;
-	
 	return new Promise((resolve, reject) => {
 		let user = new UserModel();
 		user
